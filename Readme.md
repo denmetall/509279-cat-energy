@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Денис Евстратчик](https://up.htmlacademy.ru/adaptive/13/user/509279).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Кошара](https://up.htmlacademy.ru/adaptive/13/user/169035).
 
 ---
 
