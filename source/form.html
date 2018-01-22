@@ -26,100 +26,91 @@
       </nav>
     </header>
     <main class="main">
-      <article class="questionnaire">
+      <section class="questionnaire">
         <h1 class="questionnaire__title">Подбор программы</h1>
         <form class="form-choice" action="https://echo.htmlacademy.ru" method="post">
           <h2 class="form-choice__title">Заполните анкету и мы подберем программу питания для вашего кота</h2>
           <div class="field">
-            <p class="input">
-              <label>
-                <span class="input__label">Имя:</span>
-                <input id="name" name="name" type="text" placeholder="Барсик" required>
-              </label>
-            </p>
-            <p class="input">
-              <label>
-                <span class="input__label">Вес (Кг):</span>
-                <input id="weight" name="weight" type="text" placeholder="7" required>
-              </label>
-            </p>
-            <p class="input">
-              <label>
-                <span class="input__label">Возраст (Лет):</span>
-                <input id="age" name="age" type="text" placeholder="7">
-              </label>
-            </p>
+            <label class="label">
+              <span class="label__title">
+                Имя:
+                <sup class="star">*</sup>
+              </span>
+              <input class="input" id="name" name="name" type="text" placeholder="Барсик" required>
+            </label>
+            <label class="label">
+              <span class="label__title">
+                Вес (Кг):
+                <sup class="star">*</sup>
+              </span>
+              <input class="input" id="weight" name="weight" type="text" placeholder="7" required>
+            </label>
+            <label class="label">
+              <span class="label__title">Возраст (Лет):</span>
+              <input class="input" id="age" name="age" type="text" placeholder="7">
+            </label>
           </div>
           <div class="field">
-            <p class="radio">
-              <label>
-                <input id="slim" name="programme" type="radio" checked>
-                <span class="radio__label">Похудение</span>
-              </label>
-            </p>
-            <p class="radio">
-              <label>
-                <input id="gym" name="programme" type="radio">
-                <span class="radio__label">Набор массы</span>
-              </label>
-            </p>
-            <p class="radio">
-              <label>
-                <input id="unknown" name="programme" type="radio">
-                <span class="radio__label">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </p>
+            <label class="label">
+              <input class="radio" value="slim" name="programme" type="radio" checked>
+              <span class="label__title">Похудение</span>
+            </label>
+            <label class="label">
+              <input class="radio" value="gym" name="programme" type="radio">
+              <span class="label__title">Набор массы</span>
+            </label>
+            <label class="label">
+              <input class="radio" value="unknown" name="programme" type="radio">
+              <span class="label__title">Не знаю (Нужен ваш совет)</span>
+            </label>
           </div>
           <div class="field">
             <div class="field__title">Контактные данные (владельца кота)</div>
-            <p class="input">
-              <label>
-                <span class="input__label">E-mail:</span>
-                <input id="email" name="email" type="email" placeholder="kuklachev@gmail.com">
-              </label>
-            </p>
-            <p class="input">
-              <label>
-                <span class="input__label">Телефон:</span>
-                <input id="phone" name="phone" type="tel" placeholder="8(960)900-60-90">
-              </label>
-            </p>
+            <label class="label">
+              <span class="label__title">
+                E-mail:
+                <sup class="star">*</sup>
+              </span>
+              <input class="input" id="email" name="email" type="email" placeholder="kuklachev@gmail.com" required>
+            </label>
+            <label class="label">
+              <span class="label__title">
+                Телефон:
+                <sup class="star">*</sup>
+              </span>
+              <input class="input" id="phone" name="phone" type="tel" placeholder="8(960)900-60-90" required>
+            </label>
           </div>
           <div class="field">
             <div class="field__title">Комментарий</div>
-            <p class="textarea">
-              <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
-            </p>
+            <textarea class="textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
           <div class="field">
             <div class="field__title">Дополнительно</div>
-            <p class="checkbox">
-              <label>
-                <input id="sweetener" name="sweetener" type="checkbox" checked>
-                <span class="checkbox__label">Сахарозаменитель</span>
-              </label>
-            </p>
-            <p class="checkbox">
-              <label>
-                <input id="water" name="water" type="checkbox">
-                <span class="checkbox__label">Питьевая вода</span>
-              </label>
-            </p>
-            <p class="checkbox">
-              <label>
-                <input id="milk" name="milk" type="checkbox">
-                <span class="checkbox__label">Молоко</span>
-              </label>
-            </p>
-            <p class="checkbox">
-              <label>
-                <input id="vitamins" name="vitamins" type="checkbox">
-                <span class="checkbox__label">Витамины</span>
-              </label>
-            </p>
+            <label class="label">
+              <input class="checkbox" id="sweetener" name="sweetener" type="checkbox" checked>
+              <span class="label__title">Сахарозаменитель</span>
+            </label>
+            <label class="label">
+              <input id="water" name="water" type="checkbox">
+              <span class="label__title">Питьевая вода</span>
+            </label>
+            <label class="label">
+              <input class="checkbox" id="milk" name="milk" type="checkbox">
+              <span class="label__title">Молоко</span>
+            </label>
+            <label class="label">
+              <input class="checkbox" id="vitamins" name="vitamins" type="checkbox">
+              <span class="label__title">Витамины</span>
+            </label>
           </div>
+          <button class="btn btn--green" type="submit">Отправить заявку</button>
+          <p class="questionnaire__text">
+            <sup class="star">*</sup>
+            &#8212; Обязательные поля
+          </p>
         </form>
-      </article>
+      </section>
     </main>
     <footer class="page-footer">
       <section class="contacts">
