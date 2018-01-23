@@ -31,77 +31,77 @@
         <form class="form-choice" action="https://echo.htmlacademy.ru" method="post">
           <h2 class="form-choice__title">Заполните анкету и мы подберем программу питания для вашего кота</h2>
           <div class="field">
-            <label class="label">
-              <span class="label__title">
+            <label class="input">
+              <span class="input__label">
                 Имя:
                 <sup class="star">*</sup>
               </span>
-              <input class="input" id="name" name="name" type="text" placeholder="Барсик" required>
+              <input class="input__field" id="name" name="name" type="text" placeholder="Барсик" required>
             </label>
-            <label class="label">
-              <span class="label__title">
+            <label class="input">
+              <span class="input__label">
                 Вес (Кг):
                 <sup class="star">*</sup>
               </span>
-              <input class="input" id="weight" name="weight" type="text" placeholder="7" required>
+              <input class="input__field" id="weight" name="weight" type="text" placeholder="7" required>
             </label>
-            <label class="label">
-              <span class="label__title">Возраст (Лет):</span>
-              <input class="input" id="age" name="age" type="text" placeholder="7">
+            <label class="input">
+              <span class="input__label">Возраст (Лет):</span>
+              <input class="input__field" id="age" name="age" type="text" placeholder="7">
             </label>
           </div>
           <div class="field">
-            <label class="label">
-              <input class="radio" value="slim" name="programme" type="radio" checked>
-              <span class="label__title">Похудение</span>
+            <label class="radio">
+              <input class="radio__field" value="slim" name="programme" type="radio" checked>
+              <span class="radio__label">Похудение</span>
             </label>
-            <label class="label">
-              <input class="radio" value="gym" name="programme" type="radio">
-              <span class="label__title">Набор массы</span>
+            <label class="radio">
+              <input class="radio__field" value="gym" name="programme" type="radio">
+              <span class="radio__label">Набор массы</span>
             </label>
-            <label class="label">
-              <input class="radio" value="unknown" name="programme" type="radio">
-              <span class="label__title">Не знаю (Нужен ваш совет)</span>
+            <label class="radio">
+              <input class="radio__field" value="unknown" name="programme" type="radio">
+              <span class="radio__label">Не знаю (Нужен ваш совет)</span>
             </label>
           </div>
           <div class="field">
             <div class="field__title">Контактные данные (владельца кота)</div>
-            <label class="label">
-              <span class="label__title">
+            <label class="input">
+              <span class="input__label">
                 E-mail:
                 <sup class="star">*</sup>
               </span>
-              <input class="input" id="email" name="email" type="email" placeholder="kuklachev@gmail.com" required>
+              <input class="input__field" id="email" name="email" type="email" placeholder="kuklachev@gmail.com" required>
             </label>
-            <label class="label">
-              <span class="label__title">
+            <label class="input">
+              <span class="input__label">
                 Телефон:
                 <sup class="star">*</sup>
               </span>
-              <input class="input" id="phone" name="phone" type="tel" placeholder="8(960)900-60-90" required>
+              <input class="input__field" id="phone" name="phone" type="tel" placeholder="8(960)900-60-90" required>
             </label>
           </div>
-          <div class="field">
-            <div class="field__title">Комментарий</div>
-            <textarea class="textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <div class="textarea">
+            <div class="textarea__label">Комментарий</div>
+            <textarea class="textarea__field" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
           <div class="field">
             <div class="field__title">Дополнительно</div>
-            <label class="label">
-              <input class="checkbox" id="sweetener" name="sweetener" type="checkbox" checked>
-              <span class="label__title">Сахарозаменитель</span>
+            <label class="checkbox">
+              <input class="checkbox__field" id="sweetener" name="sweetener" type="checkbox" checked>
+              <span class="checkbox__label">Сахарозаменитель</span>
             </label>
-            <label class="label">
-              <input id="water" name="water" type="checkbox">
-              <span class="label__title">Питьевая вода</span>
+            <label class="checkbox">
+              <input id="water" name__field="water" type="checkbox">
+              <span class="checkbox__label">Питьевая вода</span>
             </label>
-            <label class="label">
-              <input class="checkbox" id="milk" name="milk" type="checkbox">
-              <span class="label__title">Молоко</span>
+            <label class="checkbox">
+              <input class="checkbox__field" id="milk" name="milk" type="checkbox">
+              <span class="checkbox__label">Молоко</span>
             </label>
-            <label class="label">
-              <input class="checkbox" id="vitamins" name="vitamins" type="checkbox">
-              <span class="label__title">Витамины</span>
+            <label class="checkbox">
+              <input class="checkbox__field" id="vitamins" name="vitamins" type="checkbox">
+              <span class="checkbox__label">Витамины</span>
             </label>
           </div>
           <button class="btn btn--green" type="submit">Отправить заявку</button>
