@@ -6,10 +6,10 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="logo" href="index.html">
-        <img class="logo__img" src="http://placehold.it/150x100" width="150" height="50" alt="Логотип Кэт энерджи">
+      <a class="logo page-header__logo" href="index.html">
+        <img class="logo__img" src="http://placehold.it/150x100" width="50" height="50" alt="Логотип Кэт энерджи">
+        <img class="logo__text" src="http://placehold.it/150x100" width="150" height="50" alt="Cat Energy">
       </a>
-      <p class="page-header__title">Cat Energy</p>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="site-nav main-nav__list">
@@ -26,100 +26,78 @@
       </nav>
     </header>
     <main class="main">
-      <article class="questionnaire">
+      <section class="questionnaire">
         <h1 class="questionnaire__title">Подбор программы</h1>
         <form class="form-choice" action="https://echo.htmlacademy.ru" method="post">
           <h2 class="form-choice__title">Заполните анкету и мы подберем программу питания для вашего кота</h2>
           <div class="field">
-            <p class="input">
-              <label>
-                <span class="input__label">Имя:</span>
-                <input id="name" name="name" type="text" placeholder="Барсик" required>
-              </label>
-            </p>
-            <p class="input">
-              <label>
-                <span class="input__label">Вес (Кг):</span>
-                <input id="weight" name="weight" type="text" placeholder="7" required>
-              </label>
-            </p>
-            <p class="input">
-              <label>
-                <span class="input__label">Возраст (Лет):</span>
-                <input id="age" name="age" type="text" placeholder="7">
-              </label>
-            </p>
+            <label class="input">
+              <span class="input__label">Имя:<sup>*</sup></span>
+              <input class="input__field" id="name" name="name" type="text" placeholder="Барсик" required>
+            </label>
+            <label class="input">
+              <span class="input__label">Вес (Кг):<sup>*</sup></span>
+              <input class="input__field" id="weight" name="weight" type="text" placeholder="7" required>
+            </label>
+            <label class="input">
+              <span class="input__label">Возраст (Лет):</span>
+              <input class="input__field" id="age" name="age" type="text" placeholder="7">
+            </label>
           </div>
           <div class="field">
-            <p class="radio">
-              <label>
-                <input id="slim" name="programme" type="radio" checked>
-                <span class="radio__label">Похудение</span>
-              </label>
-            </p>
-            <p class="radio">
-              <label>
-                <input id="gym" name="programme" type="radio">
-                <span class="radio__label">Набор массы</span>
-              </label>
-            </p>
-            <p class="radio">
-              <label>
-                <input id="unknown" name="programme" type="radio">
-                <span class="radio__label">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </p>
+            <label class="radio">
+              <input class="radio__field" value="slim" name="programme" type="radio" checked>
+              <span class="radio__label">Похудение</span>
+            </label>
+            <label class="radio">
+              <input class="radio__field" value="gym" name="programme" type="radio">
+              <span class="radio__label">Набор массы</span>
+            </label>
+            <label class="radio">
+              <input class="radio__field" value="unknown" name="programme" type="radio">
+              <span class="radio__label">Не знаю (Нужен ваш совет)</span>
+            </label>
           </div>
           <div class="field">
             <div class="field__title">Контактные данные (владельца кота)</div>
-            <p class="input">
-              <label>
-                <span class="input__label">E-mail:</span>
-                <input id="email" name="email" type="email" placeholder="kuklachev@gmail.com">
-              </label>
-            </p>
-            <p class="input">
-              <label>
-                <span class="input__label">Телефон:</span>
-                <input id="phone" name="phone" type="tel" placeholder="8(960)900-60-90">
-              </label>
-            </p>
+            <label class="input">
+              <span class="input__label">E-mail:<sup>*</sup></span>
+              <input class="input__field" id="email" name="email" type="email" placeholder="kuklachev@gmail.com" required>
+            </label>
+            <label class="input">
+              <span class="input__label">Телефон:<sup>*</sup></span>
+              <input class="input__field" id="phone" name="phone" type="tel" placeholder="8(960)900-60-90" required>
+            </label>
           </div>
-          <div class="field">
-            <div class="field__title">Комментарий</div>
-            <p class="textarea">
-              <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
-            </p>
+          <div class="textarea">
+            <div class="textarea__label">Комментарий</div>
+            <textarea class="textarea__field" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
           <div class="field">
             <div class="field__title">Дополнительно</div>
-            <p class="checkbox">
-              <label>
-                <input id="sweetener" name="sweetener" type="checkbox" checked>
-                <span class="checkbox__label">Сахарозаменитель</span>
-              </label>
-            </p>
-            <p class="checkbox">
-              <label>
-                <input id="water" name="water" type="checkbox">
-                <span class="checkbox__label">Питьевая вода</span>
-              </label>
-            </p>
-            <p class="checkbox">
-              <label>
-                <input id="milk" name="milk" type="checkbox">
-                <span class="checkbox__label">Молоко</span>
-              </label>
-            </p>
-            <p class="checkbox">
-              <label>
-                <input id="vitamins" name="vitamins" type="checkbox">
-                <span class="checkbox__label">Витамины</span>
-              </label>
-            </p>
+            <label class="checkbox">
+              <input class="checkbox__field" id="sweetener" name="sweetener" type="checkbox" checked>
+              <span class="checkbox__label">Сахарозаменитель</span>
+            </label>
+            <label class="checkbox">
+              <input id="water" name__field="water" type="checkbox">
+              <span class="checkbox__label">Питьевая вода</span>
+            </label>
+            <label class="checkbox">
+              <input class="checkbox__field" id="milk" name="milk" type="checkbox">
+              <span class="checkbox__label">Молоко</span>
+            </label>
+            <label class="checkbox">
+              <input class="checkbox__field" id="vitamins" name="vitamins" type="checkbox">
+              <span class="checkbox__label">Витамины</span>
+            </label>
           </div>
+          <button class="btn btn--green" type="submit">Отправить заявку</button>
+          <p class="questionnaire__text">
+            <sup>*</sup>&#8212; Обязательные поля
+          </p>
         </form>
-      </article>
+      </section>
     </main>
     <footer class="page-footer">
       <section class="contacts">
@@ -131,7 +109,7 @@
         </div>
       </section>
       <a class="logo" href="index.html">
-        <img class="logo__img" src="http://placehold.it/150x100" width="150" height="50" alt="Логотип Кэт энерджи">
+        <img class="logo__text" src="http://placehold.it/150x100" width="150" height="50" alt="Логотип Кэт энерджи">
       </a>
       <ul class="socials">
         <li class="socials__item">
