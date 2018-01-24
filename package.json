@@ -11,7 +11,7 @@
     "gulp-less": "3.4.x",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
-    "normalize.css": "^7.0.0",
+    "normalize.css": "7.0.0",
     "stylelint": "8.4.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
