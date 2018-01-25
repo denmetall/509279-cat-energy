@@ -1,0 +1,74 @@
+.sport-programme {
+  .reset();
+  padding: 20px;
+}
+
+.sport-programme__item {
+  min-height: 267px;
+  background-color: @grey;
+  padding: 40px 20px 20px 20px;
+  margin-bottom: 20px;
+}
+
+.sport-programme__item:last-child {
+  margin-bottom: 0px;
+}
+
+.sport-programme__title {
+  .reset();
+  padding-left: 70px;
+  font-size: 24px;
+  line-height: 37px;
+  color: @text-color-title;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  position: relative;
+
+  &::before {
+    content: "";
+    .size(50px,50px);
+    border-radius: 50%;
+    position: absolute;
+    left:0px;
+    top: -5px;
+    background-color: @green;
+  }
+
+//  &--pro::before {
+//    content: "";
+//    .size(150px,150px);
+//    background-image: url("../../img/icon-cat-pro.svg");
+//    background-repeat: no-repeat;
+//  }
+//
+//  &--slim::before {
+//    background-image: url("../../img/icon-cat-slim.svg");
+//  }
+}
+
+.sport-programme__text {
+  border-bottom: 1px solid @grey-hover;
+  .reset();
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.sport-programme__btn {
+  color: @text-color-title;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding-right: 39px;
+  position: relative;
+
+  &::after {
+    content: "";
+    .size(24px,11px);
+    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top:3px;
+    right:0px;
+  }
+}
