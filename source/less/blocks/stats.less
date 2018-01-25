@@ -1,0 +1,38 @@
+.stats {
+  display: flex;
+  //justify-content: space-between;
+}
+
+.stats__wrap {
+  text-align: center;
+  position: relative;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  padding: 15px 15px;
+  border: 1px solid @grey-hover;
+  width: 88%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.stats__value {
+  font-size: 24px;
+  line-height: 24px;
+  color: @text-color-title;
+}
+
+.stats__field {
+  position: absolute;
+  padding: 0 10px;
+  font-size: 12px;
+  line-height: 12px;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 71%;
+  background-color: @grey;
+  text-align: center;
+}
+
