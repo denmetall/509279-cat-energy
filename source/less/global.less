@@ -1,13 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  min-width: 320px;
-  font-family: @font;
+  min-width: @mobile-width;
+  font-family: 'Oswald', 'Arial', sans-serif;
   font-weight: 400;
-  font-size: @font-size;
-  line-height: @font-size+4;
-  background-color: @background-color-base;
-  color: @text-color-base;
+  font-size: 14px;
+  line-height: 18px;
+  color: @primary-text;
 }
 
 html {
@@ -27,13 +26,4 @@ img {
 
 a {
   text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: @font-add;
 }

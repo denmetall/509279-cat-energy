@@ -1,23 +1,23 @@
 .btn {
   display: inline-block;
   text-align: center;
-  font-family: @font-add;
+  font: inherit;
   text-transform: uppercase;
   font-size: inherit;
-  color: @white;
-  background-color: @green;
+  color: @secondary-text;
+  background-color: @primary-bg;
   min-width: 280px;
   padding: 15px 0px;
   border: none;
 
   &:hover,
   &:focus {
-    background-color: @green-hover;
-    color: @white-hover;
+    background-color: @primary-bg--dark;
+    color: @secondary-text--dark;
   }
 
   &:active{
-    background-color: @green-hover;
-    color: @white-active;
+    background-color: @primary-bg--dark;
+    color: @secondary-text--darken;
   }
 }
