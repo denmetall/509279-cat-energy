@@ -34,30 +34,31 @@
     top: -5px;
     background-color: @primary-bg;
   }
+}
 
-  .sport-programme__text {
-    border-bottom: 1px solid @secondary-bg--dark;
-    .reset();
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+.sport-programme__text {
+  border-bottom: 1px solid @secondary-bg--dark;
+  .reset();
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.sport-programme__btn {
+  color: @primary-text--darken;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding-right: 39px;
+  position: relative;
+
+  &::after {
+    content: "";
+    .size(24px, 11px);
+    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 3px;
+    right: 0px;
   }
-
-  .sport-programme__btn {
-    color: @primary-text--darken;
-    font-size: 16px;
-    line-height: 16px;
-    text-transform: uppercase;
-    padding-right: 39px;
-    position: relative;
-
-    &::after {
-      content: "";
-      .size(24px, 11px);
-      background-image: url("../../img/icon-right-arrow-long.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      position: absolute;
-      top: 3px;
-      right: 0px;
-    }
-  }
+}
