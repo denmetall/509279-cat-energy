@@ -3,13 +3,17 @@
   text-align: center;
   font: inherit;
   text-transform: uppercase;
-  font-size: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  min-width: 280px;
+  min-height: 40px;
+  padding: 10px 10px;
+  border: none;
+}
+
+.btn--primary {
   color: @secondary-text;
   background-color: @primary-bg;
-  width: 280px;
-  min-height: 40px;
-  padding: 15px 10px;
-  border: none;
 
   &:hover,
   &:focus {
@@ -23,7 +27,18 @@
   }
 }
 
-.btn--grey {
+.btn--secondary {
   background-color: @secondary-bg;
-  color: @primary-text--dark;
+  color: @primary-text;
+
+  &:hover,
+  &:focus {
+    background-color: @secondary-bg--dark;
+    color: @primary-text;
+  }
+
+  &:active {
+    background-color: @secondary-bg--dark;
+    color: @primary-text--30;
+  }
 }
