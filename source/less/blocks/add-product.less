@@ -1,8 +1,15 @@
-.add-products__title {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  color: @primary-text--darken;
+.add-product {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 14px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid @secondary-bg--darken;
+}
+
+.add-product__title {
+  .reset();
+  width: 280px;
+  margin-bottom: 15px;
 }
 
 .add-product__link {
@@ -14,7 +21,23 @@
 }
 
 .add-product__text {
+  .reset();
+  width: 140px;
   font-family: @secondary-font;
   font-weight: 400;
   line-height: 14px;
+  margin-bottom: 15px;
+
+  &--right {
+    text-align: right;
+  }
 }
+
+.add-product__btn {
+  height: 40px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  padding: 10px 15px;
+}
+
