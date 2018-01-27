@@ -1,11 +1,15 @@
 .more-products__btn {
+  height: 40px;
   font-size: 16px;
   line-height: 20px;
   font-family: inherit;
   font-weight: 400;
+  padding: 10px 10px;
 }
 
 .more-products__title {
+  .reset();
+  margin-bottom: 10px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -14,8 +18,17 @@
 }
 
 .more-products__desc {
+  .reset();
+  margin-bottom: 20px;
   font-family: @secondary-font;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
+}
+
+.more-products {
+  text-align: center;
+  padding: 80px 20px 20px 20px;
+  min-height: 210px;
+  border: 1px solid @secondary-bg--darken;
 }
