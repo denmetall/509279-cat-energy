@@ -1,0 +1,23 @@
+.socials {
+  .reset();
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  min-height: 64px;
+  border-bottom: 1px solid @secondary-bg--darken;
+  padding: 15px 20px;
+}
+
+.socials__item {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.socials__link {
+  .size(46px,40px);
+  display: block;
+  border: 1px solid @secondary-bg--darken;
+}
