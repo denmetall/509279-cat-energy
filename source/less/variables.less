@@ -7,23 +7,48 @@
 @primary-font: 'Oswald', 'Arial', sans-serif;
 @secondary-font: 'Arial', sans-serif;
 
-//Цвет текста
-@primary-text: #444444;
-@primary-text--dark: #222222;
-@primary-text--darken:#111111;
-@primary-text--30: rgba(68,68,68,0.3);
+//
+// Библиотека цветов
+//
 
-@secondary-text: rgba(255,255,255,1);
-@secondary-text--dark: rgba(255,255,255,0.6);
-@secondary-text--darken: rgba(255,255,255,0.3);
+@black: #444444;
+@black--dark: #222222;
+@black--darken: #111111;
+//@black--30: func(@black, .3);
+@black--30: rgba(68,68,68,0.3); // это цвет #444444
+
+@grey: #f2f2f2;
+@grey--dark: #ebebeb;
+@grey--darken: #d9d9d9;
+
+@green: #68b738;
+@green--dark: #5eaa2f;
+
+@pink: #ff8282;
+
+@white: rgba(255,255,255,1);
+//@white--60: func(@white, .6);
+//@white--30: func(@white, .3);
+@white--60: rgba(255,255,255,0.6);
+@white--30: rgba(255,255,255,0.3);
+
+//Цвет текста
+@primary-text: @black;
+@primary-text--dark: @black--dark;
+@primary-text--darken: @black--darken;
+@primary-text--30: @black--30;
+
+@secondary-text: @white;
+@secondary-text--dark: @white--60;
+@secondary-text--darken: @white--30;
 
 //Цвет фона
-@primary-bg: #68b738; //green color
-@primary-bg--dark: #5eaa2f;
+@primary-bg: @green;
+@primary-bg--dark: @green--dark;
 
-@secondary-bg: #f2f2f2; //Серый фон сайта
-@secondary-bg--dark: #ebebeb;
-@secondary-bg--darken: #d9d9d9;
+@secondary-bg: @grey;
+@secondary-bg--dark: @grey--dark;
+@secondary-bg--darken: @grey--darken;
 
 //Цвет уведомлений
-@error-color: #ff8282;
+@error-color: @pink;
