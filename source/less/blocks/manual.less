@@ -1,0 +1,29 @@
+.manual {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.manual__item {
+  padding: 0;
+  margin: 0;
+  min-height: 60px;
+  padding-left: 80px;
+  position: relative;
+  margin-bottom: 20px;
+  font-family: @secondary-font;
+  font-weight: 400;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: @primary-bg;
+    position: absolute;
+    left: 0;
+  }
+}

@@ -1,0 +1,39 @@
+.stats {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.stats__wrap {
+  text-align: center;
+  position: relative;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  padding: 15px 15px;
+  border: 1px solid @secondary-bg--darken;
+  width: 124px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.stats__value {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: @primary-text--darken;
+}
+
+.stats__field {
+  position: absolute;
+  padding: 0 10px;
+  font-size: 12px;
+  line-height: 12px;
+  bottom: -25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 98px;
+  background-color: @secondary-bg;
+  text-align: center;
+  font-family: @secondary-font;
+}

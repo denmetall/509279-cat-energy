@@ -1,0 +1,36 @@
+.progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress__btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: inherit;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.progress__bar {
+  width: 84px;
+  height: 14px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 35px;
+    height: 6px;
+    background-color: @primary-bg;
+    border-radius: inherit;
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
