@@ -25,5 +25,21 @@
     background-color: @primary-bg;
     position: absolute;
     left: 0;
+    top: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .manual {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .manual__item {
+    padding-top: 115px;
+    padding-left: 0;
+    width: 285px;
+    min-height: 230px;
   }
 }
