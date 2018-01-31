@@ -4,7 +4,7 @@
 }
 
 .box-content--grey {
-  background-color: @secondary-bg;
+  background-image: linear-gradient(white 0, @secondary-bg 0);
 }
 
 .box-content__title {
@@ -15,4 +15,16 @@
   font-weight: 400;
   color: @primary-text--darken;
   margin-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .box-content--grey {
+    background-image: linear-gradient(white 57%, @secondary-bg 57%);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .box-content--grey {
+    background-image: linear-gradient(white 70%, @secondary-bg 70%);
+  }
 }
