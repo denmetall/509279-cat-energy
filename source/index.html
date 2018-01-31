@@ -51,18 +51,18 @@
           <a class="sport-programme__btn" href="#">Каталог Pro</a>
         </div>
       </article>
-      <section class="box-content container">
-        <h2 class="box-content__title">Как это работает</h2>
-        <ul class="manual">
+      <section class="manual container">
+        <h2 class="manual__title">Как это работает</h2>
+        <ul class="manual__list">
           <li class="manual__item">Функциональное питание содержит только полезные питательные вещества.</li>
           <li class="manual__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
           <li class="manual__item">Замените один-два приема обычной еды на наше фунцкциональное питание.</li>
           <li class="manual__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
         </ul>
       </section>
-      <section class="box-content box-content--grey container">
-        <h2 class="box-content__title">Живой пример</h2>
-        <div class="reviews">
+      <section class="reviews container">
+        <div class="reviews__wrap">
+          <h2 class="reviews__title">Живой пример</h2>
           <p class="reviews__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <div class="stats">
             <div class="stats__wrap">
@@ -74,11 +74,13 @@
               <span class="stats__field">затрачено времени</span>
             </div>
           </div>
-          <div class="reviews__title">Затраты на питание: 15 000 руб.</div>
-          <div class="reviews__img">
+          <div class="reviews__text">Затраты на питание: 15 000 руб.</div>
+        </div>
+        <div class="slider reviews__slider">
+          <div class="slider__img">
             <img src="img/before-mobile@1x.png" width="320" height="240" alt="Кот Борис">
           </div>
-          <div class="progress reviews__progress">
+          <div class="progress slider__progress">
             <button class="progress__btn" type="button">Было</button>
             <div class="progress__bar"></div>
             <button class="progress__btn" type="button">Стало</button>
