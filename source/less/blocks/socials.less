@@ -1,5 +1,4 @@
 .socials {
-  background-color: @secondary-bg;
   padding-top: 15px;
   padding-bottom: 15px;
   margin-top: 0;
@@ -9,6 +8,7 @@
   list-style: none;
   min-height: 64px;
   border-bottom: 1px solid @secondary-bg--darken;
+  width: 210px;
 }
 
 .socials__item {
@@ -24,4 +24,10 @@
   height: 40px;
   display: block;
   border: 1px solid @secondary-bg--darken;
+}
+
+@media (min-width: @tablet-width) {
+  .socials {
+    border-bottom: none;
+  }
 }
