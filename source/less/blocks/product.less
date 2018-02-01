@@ -45,3 +45,35 @@
 .product__value {
   text-align: right;
 }
+
+@media (min-width: @tablet-width) {
+  .product {
+    width: 324px;
+    justify-content: space-between;
+  }
+
+  .product__wrap {
+    width: 247px;
+  }
+
+  .product__option,
+  .product__value {
+    width: 162px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product {
+    width: 245px;
+    justify-content: space-between;
+  }
+
+  .product__wrap {
+    width: 247px;
+  }
+
+  .product__option,
+  .product__value {
+    width: 122,5;
+  }
+}
