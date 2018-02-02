@@ -4,6 +4,10 @@
   padding-top: 14px;
   padding-bottom: 20px;
   border-bottom: 1px solid @secondary-bg--darken;
+
+  &:first-child {
+    border-top: 1px solid @secondary-bg--darken;
+  }
 }
 
 .add-product__title {
@@ -32,5 +36,24 @@
 
   &--right {
     text-align: right;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .add-product__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .add-product__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .add-product__link {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
