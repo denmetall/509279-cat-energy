@@ -29,3 +29,29 @@
   font-family: @secondary-font;
   font-weight: 400;
 }
+
+@media (min-width: @tablet-width) {
+  .contacts__promo {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__address {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__wrap {
+    position: absolute;
+    background-color: white;
+    width: 570px;
+    min-height: 200px;
+    left: 80px;
+    top: 95px;
+  }
+}
