@@ -3,7 +3,8 @@
   padding-top: 25px;
   padding-bottom: 10px;
 
-  &--line {
+  &--radio {
+    border-top: 1px solid @secondary-bg--darken;
     border-bottom: 1px solid @secondary-bg--darken;
   }
 }
@@ -14,4 +15,40 @@
   line-height: 24px;
   font-weight: 400;
   color: @primary-text--darken;
+}
+
+@media (min-width: @tablet-width) {
+  .field {
+    flex-grow: 1;
+
+    &--radio {
+      border-left: 1px solid @secondary-bg--darken;
+    }
+  }
+
+  .field__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .field {
+    &--radio {
+      border-right: 1px solid @secondary-bg--darken;
+      max-width: 570px;
+      flex-grow: 1;
+    }
+
+    &--input {
+      max-width: 570px;
+      flex-grow: 1;
+    }
+  }
+
+  .field__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }

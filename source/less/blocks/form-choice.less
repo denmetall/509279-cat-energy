@@ -20,3 +20,29 @@
 .form-choice__btn {
   margin-bottom: 5px;
 }
+
+@media (min-width: @tablet-width) {
+  .form-choice__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-choice__text {
+    max-width: 324px;
+    text-align: left;
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-choice__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form-choice__btn {
+    max-width: 570px;
+    flex-grow: 1;
+  }
+}

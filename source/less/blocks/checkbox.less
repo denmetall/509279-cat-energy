@@ -1,6 +1,7 @@
 .checkbox {
   display: block;
   margin-bottom: 23px;
+  min-width: 245px;
 }
 
 .checkbox__label {
@@ -8,4 +9,11 @@
   font-size: 16px;
   text-transform: uppercase;
   color: @primary-text--dark;
+}
+
+@media (min-width: @tablet-width) {
+  .checkbox__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

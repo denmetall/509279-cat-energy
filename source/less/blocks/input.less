@@ -2,7 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 280px;
+  flex-grow: 1;
+  min-width: 280px;
+  max-width: 570px;
   margin-bottom: 13px;
 }
 
@@ -24,4 +26,11 @@
   font-size: 16px;
   text-transform: uppercase;
   color: @primary-text--dark;
+}
+
+@media (min-width: @tablet-width) {
+  .input__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
