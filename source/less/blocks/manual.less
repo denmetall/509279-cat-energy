@@ -5,6 +5,7 @@
 
 .manual__list {
   padding: 0;
+  padding-top: 20px;
   margin: 0;
   list-style: none;
 }
@@ -16,7 +17,6 @@
   line-height: 60px;
   font-weight: 400;
   color: @primary-text--darken;
-  margin-bottom: 20px;
 }
 
 .manual__item {
@@ -56,5 +56,15 @@
     padding-left: 0;
     width: 285px;
     min-height: 230px;
+
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .manual__item {
+      margin-bottom: 0;
   }
 }
