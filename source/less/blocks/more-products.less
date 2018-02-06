@@ -20,9 +20,24 @@
 }
 
 .more-products {
+  width: 324px;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
   padding-top: 80px;
   padding-bottom: 20px;
   min-height: 210px;
   border-bottom: 1px solid @secondary-bg--darken;
+}
+
+@media (min-width: @tablet-width) {
+  .more-products {
+  border-bottom: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .more-products {
+  width: 245px;
+  }
 }
