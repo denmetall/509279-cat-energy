@@ -8,16 +8,16 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrap wrap">
-        <a class="logo page-header__logo">
-          <img class="logo__img" src="img/icon-logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
-        </a>
-        <a class="logo page-header__logo">
-          <img class="logo__text" src="img/logo-mobile-header.svg" width="101" height="18" alt="Cat Energy">
-        </a>
-        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-      </div>
-      <nav class="main-nav wrap">
+      <nav class="main-nav">
+        <div class="main-nav__wrap">
+          <a class="logo page-header__logo">
+            <img class="logo__img" src="img/icon-logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+          </a>
+          <a class="logo page-header__logo">
+            <img class="logo__text" src="img/logo-mobile-header.svg" width="101" height="18" alt="Cat Energy">
+          </a>
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+        </div>
         <ul class="site-nav main-nav__list">
           <li class="site-nav__item">
             <a class="site-nav__link site-nav__link--active">Главная</a>
@@ -32,39 +32,38 @@
       </nav>
     </header>
     <main class="main">
-      <section class="promo wrap">
+      <section class="promo container">
+        <div class="promo__wrap">
         <h1 class="promo__title">Функциональное<br/> питание для котов</h1>
         <p class="promo__text">Занялся собой? Займись котом!</p>
-        <div class="promo__img">
-          <img src="img/index-can-mobile@1x.png" width="280" height="271" alt="Cat Energy со вкусом курицы">
-        </div>
         <a class="btn btn--primary promo__btn" href="form.html">Подобрать программу</a>
+        </div>
       </section>
-      <article class="sport-programme wrap">
+      <article class="sport-programme container">
         <h2 class="visually-hidden">Спортиные программы для кота.</h2>
-        <div class="sport-programme__item">
+        <div class="sport-programme__item sport-programme__item--slim">
           <h3 class="sport-programme__title sport-programme__title--slim">Похудение</h3>
           <p class="sport-programme__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="sport-programme__btn" href="#">Каталог Slim</a>
         </div>
-        <div class="sport-programme__item">
+        <div class="sport-programme__item sport-programme__item--pro">
           <h3 class="sport-programme__title sport-programme__title--pro">Набор массы</h3>
           <p class="sport-programme__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a class="sport-programme__btn" href="#">Каталог Pro</a>
         </div>
       </article>
-      <section class="box-content wrap">
-        <h2 class="box-content__title">Как это работает</h2>
-        <ul class="manual">
+      <section class="manual container">
+        <h2 class="manual__title">Как это работает</h2>
+        <ul class="manual__list">
           <li class="manual__item">Функциональное питание содержит только полезные питательные вещества.</li>
           <li class="manual__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
           <li class="manual__item">Замените один-два приема обычной еды на наше фунцкциональное питание.</li>
           <li class="manual__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
         </ul>
       </section>
-      <section class="box-content box-content--grey wrap">
-        <h2 class="box-content__title">Живой пример</h2>
-        <div class="reviews">
+      <section class="reviews container">
+        <div class="reviews__wrap">
+          <h2 class="reviews__title">Живой пример</h2>
           <p class="reviews__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <div class="stats">
             <div class="stats__wrap">
@@ -76,11 +75,13 @@
               <span class="stats__field">затрачено времени</span>
             </div>
           </div>
-          <div class="reviews__title">Затраты на питание: 15 000 руб.</div>
-          <div class="reviews__img">
+          <div class="reviews__text">Затраты на питание: 15 000 руб.</div>
+        </div>
+        <div class="slider reviews__slider">
+          <div class="slider__img">
             <img src="img/before-mobile@1x.png" width="320" height="240" alt="Кот Борис">
           </div>
-          <div class="progress reviews__progress">
+          <div class="progress slider__progress">
             <button class="progress__btn" type="button">Было</button>
             <div class="progress__bar"></div>
             <button class="progress__btn" type="button">Стало</button>
@@ -90,51 +91,48 @@
     </main>
     <footer class="page-footer">
       <section class="contacts">
-        <div class="contacts__wrap wrap">
+        <div class="contacts__wrap container">
           <h2 class="visually-hidden">Наш адрес на карте</h2>
-          <p class="contacts__promo">Приглашаем<br/> к сотрудничеству дилеров!</p>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8<br/> Санкт-Петербург</address>
+          <p class="contacts__promo">Приглашаем<br/> к сотрудничеству<br/> дилеров!</p>
+          <address class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br/> Санкт-Петербург</address>
         </div>
-        <div class="map page-footer__map">
+        <div class="map page-footer__map container">
           <img class="map__img" src="http://placehold.it/320x362" width="320" height="362" alt="Наш адресс на карте">
         </div>
       </section>
-      <a class="logo page-footer__logo wrap">
-        <img class="logo__text" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
-      </a>
-      <ul class="socials wrap">
-        <li class="socials__item">
-          <a class="socials__link" href="#" aria-label="Вконтакте">
-            <svg role="img" width="17" height="15">
-                <use xlink:href="#vk"/>
-            </svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="#" aria-label="Инстаграмм">
-            <svg role="img" width="17" height="15">
-                <use xlink:href="#instagramm"/>
-            </svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="#" aria-label="Фейсбук">
-            <svg role="img" width="17" height="15">
-                <use xlink:href="#facebook"/>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <div class="copyright wrap">
-        <a class="copyright__title" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/logo-htmlacademy.svg" width="27" height="35" alt="Лого HTML Academy">
-<!--
-          <svg role="img" width="115" height="41">
-            <use xlink:href="#htmlacademy"/>
-          </svg>
--->
+      <div class="page-footer__wrap container">
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-img" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
         </a>
+        <ul class="socials">
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Вконтакте">
+              <svg role="img" width="17" height="15">
+                  <use xlink:href="#vk"/>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Инстаграмм">
+              <svg role="img" width="17" height="15">
+                  <use xlink:href="#instagramm"/>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Фейсбук">
+              <svg role="img" width="17" height="15">
+                  <use xlink:href="#facebook"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="copyright">
+          <a class="copyright__title" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/logo-htmlacademy.svg" width="27" height="35" alt="Лого HTML Academy">
+          </a>
+        </div>
       </div>
     </footer>
   </body>

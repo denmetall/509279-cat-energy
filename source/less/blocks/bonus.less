@@ -1,6 +1,5 @@
 .bonus {
   background-color: @primary-bg;
-  width: 280px;
   min-height: 290px;
   padding: 190px 45px 45px;
 }
@@ -14,4 +13,10 @@
   font-size: 16px;
   line-height: 19px;
   text-align: center;
+}
+
+@media (min-width: @desktop-width) {
+  .bonus {
+    width: 245px;
+  }
 }

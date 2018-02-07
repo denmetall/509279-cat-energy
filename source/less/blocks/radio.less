@@ -1,6 +1,6 @@
 .radio {
   display: block;
-  margin-bottom: 22px;
+  padding: 11px 11px 11px 0;
 }
 
 .radio__label {
@@ -8,4 +8,11 @@
   font-size: 16px;
   text-transform: uppercase;
   color: @primary-text--dark;
+}
+
+@media (min-width: @tablet-width) {
+  .radio__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

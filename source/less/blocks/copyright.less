@@ -1,6 +1,7 @@
 .copyright {
   min-height: 80px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,4 +12,10 @@
   line-height: 16px;
   font-family: @secondary-font;
   color: @primary-text;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    width: 160px;
+  }
 }

@@ -2,8 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 280px;
-  margin-bottom: 13px;
+  flex-grow: 1;
+  min-width: 280px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .input__field {
@@ -24,4 +26,15 @@
   font-size: 16px;
   text-transform: uppercase;
   color: @primary-text--dark;
+}
+
+@media (min-width: @tablet-width) {
+  .input__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .input--contacts {
+    width: 570px;
+  }
 }

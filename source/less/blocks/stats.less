@@ -1,6 +1,7 @@
 .stats {
+  padding-top: 10px;
   display: flex;
-  margin-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 .stats__wrap {
@@ -29,11 +30,23 @@
   padding: 0 10px;
   font-size: 12px;
   line-height: 12px;
-  bottom: -25%;
+  bottom: -15px;
   left: 50%;
   transform: translateX(-50%);
   width: 98px;
   background-color: @secondary-bg;
   text-align: center;
   font-family: @secondary-font;
+}
+
+@media (min-width: @tablet-width) {
+  .stats__field {
+    background-color: white;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .stats__field {
+    background-color: @secondary-bg;
+  }
 }
