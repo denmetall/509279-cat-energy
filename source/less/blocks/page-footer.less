@@ -1,10 +1,15 @@
 .page-footer__logo {
   display: block;
-  text-align: center;
-  min-height: 94px;
+  min-height: 24px;
   padding-top: 35px;
   padding-bottom: 35px;
   border-bottom: 1px solid @secondary-bg--darken;
+}
+
+.page-footer__logo-img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .page-footer__wrap {
@@ -12,9 +17,17 @@
 }
 
 @media (min-width: @tablet-width) {
+  .page-footer__logo {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: none;
+  }
+
   .page-footer__wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
