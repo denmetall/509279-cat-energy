@@ -41,5 +41,36 @@
     font-size: 18px;
     line-height: 24.86px;
     font-weight: 400;
+    padding-bottom: 7px;
+
+    &:hover {
+      color: @primary-text--darken--60;
+    }
+
+    &:disabled {
+      color: @primary-text--darken--30;
+    }
+
+    &:active,
+    &--active {
+      border-bottom: 2px solid @primary-bg;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav--index .site-nav__link {
+    &:hover {
+      color: @white--60;
+    }
+
+    &:disabled {
+      color: @white--30;
+    }
+
+    &:active,
+    &--active {
+      border-bottom: 2px solid @white;
+    }
   }
 }
