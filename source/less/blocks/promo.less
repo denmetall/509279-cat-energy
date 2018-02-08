@@ -3,8 +3,7 @@
   padding-top: 0;
   padding-bottom: 20px;
   text-align: center;
-  position: relative;
-  background-image: linear-gradient(@primary-bg--light 306px, @white 306px);
+  background-image: linear-gradient(@primary-bg--light 59%, @white 59%);
 }
 
 .promo__title {
@@ -34,16 +33,14 @@
   margin-right: auto;
   margin-left: auto;
   width: 360px;
-  height: 306px;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  height: 1px;
+  position: relative;
   z-index: 100;
 }
 
 .promo__pic {
   position: absolute;
+  top: -300px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -79,6 +76,7 @@
   }
 
   .promo__img {
+    height: 306px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
