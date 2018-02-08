@@ -1,6 +1,6 @@
 .main-nav__wrap {
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 0;
   min-width: 320px;
   margin-left: auto;
   margin-right: auto;
@@ -12,12 +12,59 @@
 }
 
 .main-nav__toggle {
-  width: 24px;
-  height: 18px;
-  background-image: url("../../img/icon-mobile-menu.svg");
-  background-repeat: no-repeat;
+  padding: 0;
+  width: 66px;
+  height: 66px;
   background-color: transparent;
   border-width: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: @primary-text;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: @primary-text;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) rotate(-45deg);
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: @primary-text;
+    box-shadow: 0 6px 0 @primary-text,
+      0 12px 0 @primary-text;
+  }
+}
+
+.main-nav--closed .site-nav {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
