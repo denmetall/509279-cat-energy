@@ -70,9 +70,14 @@
 }
 
 @media (min-width: @tablet-width) {
+  .manual {
+    border-bottom: 1px solid @secondary-bg--darken;
+    padding-bottom: 58px;
+  }
+
   .manual__list {
     display: flex;
-    flex-wrap: wrap; //   justify-content: space-between;
+    flex-wrap: wrap;
     max-width: 708px;
   }
 
@@ -129,6 +134,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .manual {
+    border-bottom: none;
+  }
+
   .manual__list {
     max-width: 1300px;
   }
