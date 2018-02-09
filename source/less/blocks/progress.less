@@ -43,6 +43,8 @@
     border-radius: 5px;
     background-color: @grey--darken;
     position: relative;
+    margin-left: 24px;
+    margin-right: 24px;
 
     &::before {
       content: "";
@@ -56,6 +58,11 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
+    }
+
+    &:active&::before {
+      border: 1px solid @primary-bg;
+      box-shadow: 0 0 0 1px @grey--darken;
     }
 
     &::after {
@@ -74,7 +81,15 @@
   .progress__btn {
     font-size: 20px;
     line-height: 20px;
-    padding: 5px 24px;
-    border-bottom: 1px solid @grey--darken;
+    padding: 5px 0;
+    border-bottom: 2px dashed @grey--darken;
+
+    &:hover {
+      border-bottom: 2px solid @grey--darken;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 }
