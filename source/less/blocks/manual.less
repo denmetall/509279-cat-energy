@@ -72,8 +72,7 @@
 @media (min-width: @tablet-width) {
   .manual__list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: wrap; //   justify-content: space-between;
     max-width: 708px;
   }
 
@@ -81,13 +80,29 @@
     padding-top: 10px;
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 45px;
   }
 
   .manual__item {
-    padding-top: 115px;
-    padding-left: 0;
     width: 285px;
     min-height: 230px;
+    margin-bottom: 87px;
+    margin-right: 100px;
+    padding: 115px 40px 10px 0;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      left: 15px;
+      top: 15px;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
 
     &:nth-last-child(2) {
       margin-bottom: 0;
@@ -102,5 +117,16 @@
 
   .manual__item {
     margin-bottom: 0;
+    margin-right: 80px;
+    width: 245px;
+    padding: 115px 0 10px 0;
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
   }
 }
