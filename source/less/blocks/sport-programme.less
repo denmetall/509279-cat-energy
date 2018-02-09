@@ -104,8 +104,19 @@
     width: 708px;
     min-height: 372px;
     flex-grow: 1;
-    padding: 70px 283px 64px 55px;
+    padding-top: 62px;
+    padding-left: 55px;
+    padding-bottom: 45px;
     position: relative;
+    margin-bottom: 28px;
+
+    &--slim {
+      padding-right: 280px;
+    }
+
+        &--pro {
+      padding-right: 310px;
+    }
 
     &::before {
       content: "";
@@ -131,12 +142,17 @@
       content: "";
       display: none;
     }
+
+    &::after {
+      content: "";
+      display: none;
+    }
   }
 
   .sport-programme__text {
-    padding-top: 10px;
+    padding-top: 14px;
     border-bottom: none;
-    margin-bottom: 0;
+    margin-bottom: 17px;
   }
 
   .sport-programme__btn {
