@@ -41,6 +41,32 @@
     left: 0;
     top: 0;
   }
+
+  &::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+  }
+
+  &--leaf::after {
+    background-image: url("../../img/advantage-leaf@1x.png");
+  }
+
+  &--powder::after {
+    background-image: url("../../img/advantage-powder@1x.png");
+  }
+
+  &--dining::after {
+    background-image: url("../../img/advantage-dining@1x.png");
+  }
+
+  &--clock::after {
+    background-image: url("../../img/advantage-clock@1x.png");
+  }
 }
 
 @media (min-width: @tablet-width) {
