@@ -97,6 +97,21 @@
     transform: translateY(-50%);
     right: 0;
   }
+
+  &:hover {
+    padding-right: 49px;
+  }
+
+  &:active,
+  &:focus {
+    color: @primary-text--darken--30;
+  }
+
+  &:hover&::after {
+    content: "";
+    width: 32px;
+    background-image: url("../../img/icon-right-arrow-verylong.svg");
+  }
 }
 
 @media (min-width: @tablet-width) and (max-width: @desktop-width) {
@@ -188,6 +203,10 @@
     font-size: 20px;
     line-height: 20px;
     padding: 20px 47px 20px 0;
+
+    &:hover {
+      padding-right: 55px;
+    }
   }
 }
 
@@ -201,6 +220,10 @@
     font-size: 20px;
     line-height: 20px;
     padding: 10px 47px 10px 0;
+
+    &:hover {
+      padding-right: 55px;
+    }
   }
 
   .sport-programme__item {
