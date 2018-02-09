@@ -1,21 +1,33 @@
 .stats {
   padding-top: 10px;
   display: flex;
+  flex-wrap: wrap;
   padding-bottom: 0;
+}
+
+.stats__text {
+  padding: 5px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: @primary-text--darken;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+  width: 280px;
 }
 
 .stats__wrap {
   text-align: center;
   position: relative;
-  margin-right: 33px;
   margin-bottom: 30px;
   padding: 15px 15px;
   border: 1px solid @secondary-bg--darken;
   border-radius: 5px;
   width: 124px;
 
-  &:last-child {
-    margin-right: 0;
+  &:first-child {
+    margin-right: 32px;
   }
 }
 
@@ -41,9 +53,22 @@
 }
 
 @media (min-width: @tablet-width) {
+  .stats__text {
+    padding-top: 13px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: auto;
+    padding-right: 0;
+    width: 190px;
+    text-align: right;
+  }
+
   .stats__wrap {
     width: 160px;
-    margin-right: 43px;
+
+    &:first-child {
+      margin-right: 43px;
+    }
   }
 
   .stats__field {
@@ -58,10 +83,36 @@
     font-size: 30px;
     line-height: 37px;
   }
+
+  .stats__cost {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .stats__price {
+    display: block;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .stats__field {
     background-color: @secondary-bg;
+  }
+
+  .stats__wrap {
+    width: 164px;
+    margin-bottom: 51px;
+  }
+
+  .stats__cost {
+    margin-bottom: 0;
+  }
+
+  .stats__text {
+    margin-left: 0;
+    width: 328px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
