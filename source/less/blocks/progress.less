@@ -35,3 +35,39 @@
     transform: translateY(-50%);
   }
 }
+
+@media (min-width: @tablet-width) {
+  .progress__bar {
+    width: 426px;
+    height: 6px;
+    border-radius: 5px;
+    background-color: @grey--darken;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 34px;
+      height: 34px;
+      background-color: @white;
+      border: 1px solid @grey--dark;
+      box-shadow: 0 0 0 1px @grey--darken;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    &::after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: @primary-bg;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-4px,-50%);
+    }
+  }
+}
