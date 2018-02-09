@@ -129,6 +129,31 @@
       transform: translateY(-50%);
       background-color: @primary-bg;
     }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-repeat: no-repeat;
+    }
+
+    &--slim::after {
+      width: 140px;
+      height: 217px;
+      top: 50%;
+      right: 89px;
+      transform: translateY(-50%);
+      background-image: url("../../img/icon-cat-slim.svg");
+      }
+
+        &--pro::after {
+      width: 295px;
+      height: 113px;
+      top: 50%;
+      right: 1px;
+      transform: translateY(-50%);
+      background-image: url("../../img/icon-cat-pro.svg");
+      }
   }
 
   .sport-programme__title {
@@ -158,7 +183,7 @@
   .sport-programme__btn {
     font-size: 20px;
     line-height: 20px;
-    padding: 20px 35px 20px 0;
+    padding: 20px 47px 20px 0;
   }
 }
 
