@@ -1,16 +1,17 @@
 .stats {
   padding-top: 10px;
   display: flex;
-  padding-bottom: 10px;
+  padding-bottom: 0;
 }
 
 .stats__wrap {
   text-align: center;
   position: relative;
-  margin-right: 30px;
+  margin-right: 33px;
   margin-bottom: 30px;
   padding: 15px 15px;
   border: 1px solid @secondary-bg--darken;
+  border-radius: 5px;
   width: 124px;
 
   &:last-child {
@@ -40,8 +41,22 @@
 }
 
 @media (min-width: @tablet-width) {
+  .stats__wrap {
+    width: 160px;
+    margin-right: 43px;
+  }
+
   .stats__field {
-    background-color: white;
+    background-color: @white;
+    font-size: 14px;
+    line-height: 14px;
+    width: 150px;
+    bottom: -9px;
+  }
+
+  .stats__value {
+    font-size: 30px;
+    line-height: 37px;
   }
 }
 
