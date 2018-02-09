@@ -25,14 +25,14 @@
     margin: 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   .site-nav__item {
-    margin-right: 37px;
     border-bottom: none;
 
     &:last-child {
-      margin-right: 0;
       padding-right: 0;
     }
   }
@@ -59,6 +59,15 @@
 }
 
 @media (min-width: @desktop-width) {
+  .site-nav__item {
+    padding: 18px;
+  }
+
+  .site-nav__link {
+    font-size: 20px;
+    line-height: 24.86px;
+  }
+
   .main-nav--index .site-nav__link {
     &:hover {
       color: @white--60;

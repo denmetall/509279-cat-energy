@@ -55,8 +55,6 @@
 }
 
 .promo__btn {
-  font-size: 14px;
-  line-height: 18px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -75,6 +73,10 @@
     min-height: 290px;
   }
 
+  .promo__btn {
+    margin-left: 0;
+  }
+
   .promo__img {
     height: 306px;
     position: relative;
@@ -91,6 +93,7 @@
   }
 
   .promo__title {
+    padding-left: 0;
     color: @primary-text;
     font-size: 60px;
     line-height: 60px;
@@ -98,16 +101,11 @@
   }
 
   .promo__text {
+    padding-left: 0;
     color: @primary-text;
     margin-bottom: 30px;
     font-size: 20px;
     line-height: 20px;
-  }
-
-  .promo__btn {
-    width: 245px;
-    margin-right: 0;
-    margin-left: 0;
   }
 }
 
@@ -120,10 +118,18 @@
   }
 
   .promo__wrap {
-    padding-top: 66px;
+    padding: 210px 90px 90px 120px;
     width: 690px;
     margin-right: 0;
     margin-left: auto;
+  }
+
+  .promo__title {
+    margin-bottom: 20px;
+  }
+
+  .promo__text {
+    margin-bottom: 42px;
   }
 
   .promo__img {
@@ -132,7 +138,7 @@
     background-image: url("../../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 66px;
+    padding-top: 220px;
     margin-right: auto;
     margin-left: 0;
     z-index: 0;
@@ -143,6 +149,6 @@
 
   .promo__pic {
     left: 20px;
-    top: 150px;
+    top: 250px;
   }
 }

@@ -14,6 +14,9 @@
 .btn--primary {
   color: @secondary-text;
   background-color: @primary-bg;
+  min-height: 40px;
+  font-size: 14px;
+  line-height: 18px;
 
   &:hover,
   &:focus {
@@ -47,10 +50,23 @@
   .btn {
     min-width: 250px;
   }
+
+  .btn--primary {
+    min-height: 52px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .btn {
     min-width: 169px;
+  }
+
+    .btn--primary {
+    width: 245px;
+    margin-right: auto;
+    margin-left: 0;
+    padding: 15px 25px;
   }
 }
