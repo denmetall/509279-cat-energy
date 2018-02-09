@@ -45,7 +45,7 @@
         <a class="btn btn--primary promo__btn" href="form.html">Подобрать программу</a>
       </div>
       <div class="promo__img">
-        <img class="promo__pic" src="img/index-can-mobile@1x.png" alt="">
+        <img class="promo__pic" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Cat Energy Pro Курица">
       </div>
     </section>
     <article class="sport-programme container">
@@ -87,9 +87,11 @@
         </div>
       </div>
       <div class="slider reviews__slider">
-        <div class="slider__img">
-          <img src="img/before-mobile@1x.png" width="320" height="240" alt="Кот Борис">
-        </div>
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
+          <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+          <img class="slider__img" src="img/before-mobile@1x.png" width="320" height="240" alt="Кот Борис">
+        </picture>
         <div class="progress slider__progress">
           <button class="progress__btn" type="button">Было</button>
           <div class="progress__bar"></div>
