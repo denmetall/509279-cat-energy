@@ -33,7 +33,7 @@
   position: relative;
   display: inline-block;
 
-  &::before {
+  &::after {
     content: "";
     display: block;
     height: 3px;
@@ -41,6 +41,7 @@
     background-color: @primary-bg;
     position: absolute;
     top: 25px;
+    left: 0;
     z-index: -1;
   }
 
@@ -82,6 +83,30 @@
   .field__title {
     font-size: 36px;
     line-height: 36px;
+    padding-right: 39px;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 3px;
+      width: 30px;
+      background-color: @primary-bg;
+      position: absolute;
+      top: 31px;
+      left: -71px;
+      z-index: -1;
+    }
+
+    &::after {
+      width: 698px;
+      left: 0;
+      top: 32px;
+    }
+
+    &--contacts {
+      width: 555px;
+      padding-right: 0;
+    }
   }
 }
 
@@ -102,5 +127,16 @@
   .field__title {
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      width: 70px;
+      left: -109px;
+    }
+
+    &::after {
+      width: 1330px;
+      left: 0;
+      top: 32px;
+    }
   }
 }
