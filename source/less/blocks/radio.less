@@ -42,6 +42,23 @@
 }
 
 @media (min-width: @tablet-width) {
+  .radio {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 60px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+
+    &__field:checked + &__label::after {
+      width: 18px;
+      height: 18px;
+      left: 11px;
+    }
+  }
+
   .radio__label {
     font-size: 20px;
     line-height: 20px;
