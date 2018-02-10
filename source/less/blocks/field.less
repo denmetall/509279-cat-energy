@@ -24,11 +24,25 @@
 }
 
 .field__title {
-  padding: 10px 10px 25px 0;
+  padding: 10px 24px 25px 0;
+  background-color: @white;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: @primary-text--darken;
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 300px;
+    background-color: @primary-bg;
+    position: absolute;
+    top: 25px;
+    z-index: -1;
+  }
 
   &--area {
     padding-bottom: 21px;
@@ -36,6 +50,11 @@
 
   &--add {
     padding-bottom: 31px;
+  }
+
+  &--contacts {
+    width: 203px;
+    padding-right: 0;
   }
 }
 
