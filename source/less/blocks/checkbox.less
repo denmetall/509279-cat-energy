@@ -3,9 +3,51 @@
   min-width: 245px;
   padding-top: 10px;
   padding-bottom: 10px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid @secondary-bg--darken;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__field:checked + &__label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 19px;
+    height: 2px;
+    background-color: @primary-bg;
+    left: 8px;
+    top: 18px;
+    transform: rotate(-48deg);
+    border-top: none;
+    border-right: none;
+  }
+
+  &__field:checked + &__label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 11px;
+    height: 2px;
+    background-color: @primary-bg;
+    left: 3px;
+    top: 22px;
+    transform: rotate(48deg);
+    border-top: none;
+    border-right: none;
+  }
 }
 
 .checkbox__label {
+  padding-left: 46px;
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
