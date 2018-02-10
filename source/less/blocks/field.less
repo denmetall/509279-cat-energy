@@ -14,7 +14,21 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  color: @primary-text--darken;
+  color: @primary-text--darken; //  position: relative;
+  //  min-width: 201px;
+  //  display: flex;
+  //  
+  //  &::after {
+  //    content: "";
+  //    display: inline-block;
+  ////    position: absolute;
+  //    width: 99px;
+  //    height: 3px;
+  //    background-color: @primary-bg;
+  ////    right: 0;
+  ////    top: 50%;
+  ////    transform: translate(100%,-50%);
+  //  }
 }
 
 @media (min-width: @tablet-width) {
@@ -36,6 +50,11 @@
   .field--radio {
     flex-grow: 1;
     width: 570px;
+  }
+
+  .field__title {
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 

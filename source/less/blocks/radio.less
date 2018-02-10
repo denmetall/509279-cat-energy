@@ -1,6 +1,6 @@
 .radio {
   display: block;
-  padding: 11px 10px 11px 31px;
+  padding: 11px 10px 11px 47px;
   position: relative;
 
   &::before {
@@ -16,7 +16,7 @@
     transform: translateY(-50%);
   }
 
-  &::after {
+  &__field:checked + &__label::after {
     content: "";
     display: block;
     position: absolute;
@@ -27,6 +27,10 @@
     left: 9px;
     top: 50%;
     transform: translateY(-50%);
+  }
+  
+  &__field:focus + &__label::after {
+    outline: 1px solid @secondary-bg--darken;
   }
 }
 
