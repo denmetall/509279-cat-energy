@@ -55,8 +55,31 @@
 }
 
 @media (min-width: @tablet-width) {
+  .checkbox {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    margin-right: 40px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+
+    &__field:checked + &__label::before {
+      left: 10px;
+      top: 39px;
+    }
+
+    &__field:checked + &__label::after {
+      left: 16px;
+      top: 37px;
+    }
+  }
+
   .checkbox__label {
     font-size: 20px;
     line-height: 20px;
+    padding-left: 58px;
   }
 }
