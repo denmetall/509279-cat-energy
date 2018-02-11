@@ -44,8 +44,12 @@
       <div class="catalog__wrap">
         <article class="product catalog__item">
           <a class="product__img" href="#">
-              <img src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 500 г">
-            </a>
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
+              <img class="product__pic" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 500 г">
+            </picture>
+          </a>
           <div class="product__wrap">
             <h3 class="product__title">
               <a class="product__link" href="#">Cat Energy<br/> PRO 500 г</a>
