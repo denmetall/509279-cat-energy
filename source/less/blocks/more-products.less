@@ -25,6 +25,31 @@
   padding-bottom: 20px;
   min-height: 210px;
   border-bottom: 1px solid @secondary-bg--darken;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: @secondary-bg--darken;
+    position: absolute;
+    top: 41px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+    &::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: @secondary-bg--darken;
+    position: absolute;
+    top: 41px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+  }
 }
 
 @media (min-width: @tablet-width) {
