@@ -34,7 +34,18 @@
 @media (min-width: @tablet-width) {
   .bonus {
     width: 708px;
+    min-height: 200px;
+    padding: 71px 20px 71px 425px;
     background-image: url("../../img/gift-photo-tablet@1x.jpg");
+
+    &::before {
+      top: 64px;
+      left: 119px;
+    }
+  }
+
+  .bonus__text {
+    text-align: left;
   }
 }
 
