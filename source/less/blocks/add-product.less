@@ -78,6 +78,20 @@
 }
 
 @media (min-width: @desktop-width) {
+  .add-product {
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: space-between;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 14px;
+  }
+
+  .add-product__title {
+    width: 315px;
+    padding-bottom: 4px;
+  }
+
   .add-product__link {
     font-size: 20px;
     line-height: 20px;
@@ -85,5 +99,19 @@
 
   .add-product__btn {
     width: 245px;
+    margin-right: 0;
+  }
+
+  .add-product__text {
+    width: 205px;
+    text-align: left;
+    padding-bottom: 7px;
+    padding-left: 7px;
+
+    &--right {
+      width: 120px;
+      padding-right: 7px;
+      padding-left: 41px;
+    }
   }
 }
