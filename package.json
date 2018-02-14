@@ -13,10 +13,12 @@
     "gulp-less": "3.4.x",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
+    "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^1.2.2",
     "gulp-svgstore": "^6.1.1",
     "gulp-webp": "^3.0.0",
     "normalize.less": "1.0.0",
+    "posthtml-include": "^1.1.0",
     "stylelint": "8.4.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
@@ -28,7 +30,8 @@
     "start": "gulp serve",
     "images": "gulp images",
     "webp": "gulp webp",
-    "sprite": "gulp sprite"
+    "sprite": "gulp sprite",
+    "html": "gulp html"
   },
   "browserslist": [
     "last 2 versions",
