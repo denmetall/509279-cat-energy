@@ -7,8 +7,17 @@
   align-items: center;
 }
 
-.copyright__link img {
-  display: block;
+.copyright__svg {
+  color: #666666;
+
+  &:hover,
+  &:focus {
+    color: @primary-bg;
+  }
+
+  &:active {
+    color: rgba(104, 183, 56, 0.3);
+  }
 }
 
 .copyright__title {
@@ -16,6 +25,15 @@
   line-height: 16px;
   font-family: @secondary-font;
   color: @primary-text;
+
+  &:hover,
+  &:focus {
+    color: @primary-text--60;
+  }
+
+  &:active {
+    color: @primary-text--30;
+  }
 }
 
 @media (min-width: @tablet-width) {
