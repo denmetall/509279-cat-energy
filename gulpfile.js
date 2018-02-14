@@ -74,9 +74,7 @@ gulp.task("sprite", function(){
 });
 
 gulp.task("html", function() {
-  gulp.src("source/*.html", {
-    base: "source"
-  })
+  gulp.src("build/*.html")
     .pipe(posthtml([
       include()
   ]))
@@ -86,7 +84,8 @@ gulp.task("html", function() {
 gulp.task("copy", function() {
   gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/js/**"
+    "source/js/**",
+    "source/*.html"
   ], {
     base: "source"
   })
