@@ -74,7 +74,9 @@ gulp.task("sprite", function(){
 });
 
 gulp.task("html", function() {
-  gulp.src("source/*.html")
+  gulp.src("source/*.html", {
+    base: "source"
+  })
     .pipe(posthtml([
       include()
   ]))
