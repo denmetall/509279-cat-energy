@@ -1,6 +1,6 @@
 .questionnaire {
   padding-top: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 
 .questionnaire__title {
@@ -13,7 +13,20 @@
 }
 
 @media (min-width: @tablet-width) {
+  .questionnaire {
+    padding-top: 27px;
+    padding-bottom: 73px;
+  }
+
   .questionnaire__title {
     font-size: 60px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .questionnaire {
+    padding-top: 18px;
+    padding-bottom: 83px;
   }
 }

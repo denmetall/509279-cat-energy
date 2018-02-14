@@ -9,17 +9,28 @@
 }
 
 .form-choice__text {
-  padding: 5px;
+  display: block;
+  padding: 21px;
   font-family: @secondary-font;
   font-weight: 400;
   line-height: 16px;
   text-align: center;
 }
 
+.form-choice__btn {
+  font-size: 16px;
+  line-height: 20px;
+}
+
 @media (min-width: @tablet-width) {
   .form-choice {
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  .form-choice__title {
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .form-choice__wrap {
@@ -32,6 +43,16 @@
     max-width: 324px;
     text-align: left;
     flex-grow: 1;
+    padding: 18px 46px;
+  }
+
+  .form-choice__btn {
+    font-size: 20px;
+    line-height: 20px;
+    min-height: 52px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 283px;
   }
 }
 
@@ -41,13 +62,20 @@
     padding-right: 0;
   }
 
-  .form-choice__title {
-    font-size: 20px;
-    line-height: 30px;
+  .form-choice__wrap {
+    &--btn {
+      justify-content: flex-start;
+    }
+
+    &--input {
+      padding-top: 50px;
+      padding-bottom: 25px;
+    }
   }
 
   .form-choice__btn {
     max-width: 570px;
     flex-grow: 1;
+    margin-right: 37px;
   }
 }

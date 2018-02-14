@@ -1,6 +1,37 @@
 .radio {
   display: block;
-  padding: 11px 11px 11px 0;
+  padding: 11px 10px 12px 47px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid @secondary-bg--darken;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__field:checked + &__label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: @primary-bg;
+    left: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__field:focus + &__label::after {
+    outline: 1px solid @secondary-bg--darken;
+  }
 }
 
 .radio__label {
@@ -11,6 +42,23 @@
 }
 
 @media (min-width: @tablet-width) {
+  .radio {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 60px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+
+    &__field:checked + &__label::after {
+      width: 18px;
+      height: 18px;
+      left: 11px;
+    }
+  }
+
   .radio__label {
     font-size: 20px;
     line-height: 20px;

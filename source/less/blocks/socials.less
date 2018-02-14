@@ -1,5 +1,5 @@
 .socials {
-  padding: 15px;
+  padding: 10px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -11,7 +11,7 @@
 }
 
 .socials__item {
-  margin-right: 30px;
+  margin-right: 10px;
 
   &:last-child {
     margin-right: 0;
@@ -19,14 +19,46 @@
 }
 
 .socials__link {
+  position: relative;
   width: 46px;
   height: 40px;
-  display: block;
-  border: 1px solid @secondary-bg--darken;
+  display: flex;
+  color: #666666;
+
+  &:hover,
+  &:focus {
+    color: @primary-bg;
+  }
+
+  &:active {
+    color: rgba(104, 183, 56, 0.3);
+  }
+}
+
+.socials__vk,
+.socials__insta,
+.socials__fb {
+  margin: auto;
 }
 
 @media (min-width: @tablet-width) {
   .socials {
     border-bottom: none;
+    padding: 15px;
+  }
+
+  .socials__vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .socials__insta {
+    width: 23px;
+    height: 23px;
+  }
+
+  .socials__fb {
+    width: 14px;
+    height: 28px;
   }
 }
