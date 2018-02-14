@@ -30,9 +30,9 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
-gulp.task("serve", ["style"], function() {
+gulp.task("serve", function() {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -40,7 +40,7 @@ gulp.task("serve", ["style"], function() {
   });
 
   gulp.watch("source/less/**/*.less", ["style"]);
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/*.html", ["html"]);
 });
 
 gulp.task("images", function() {
@@ -84,8 +84,6 @@ gulp.task("html", function() {
 gulp.task("copy", function() {
   gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/css/**/*.css",
-    "source/img/**",
     "source/js/**"
   ], {
     base: "source"
