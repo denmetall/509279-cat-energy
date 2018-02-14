@@ -14,6 +14,7 @@
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
     "gulp-rename": "^1.2.2",
+    "gulp-svgstore": "^6.1.1",
     "gulp-webp": "^3.0.0",
     "normalize.less": "1.0.0",
     "stylelint": "8.4.x",
@@ -26,7 +27,8 @@
     "build": "gulp style",
     "start": "gulp serve",
     "images": "gulp images",
-    "webp": "gulp webp"
+    "webp": "gulp webp",
+    "sprite": "sprite"
   },
   "browserslist": [
     "last 2 versions",
