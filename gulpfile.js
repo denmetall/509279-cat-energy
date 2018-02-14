@@ -80,7 +80,7 @@ gulp.task("html", function() {
     .pipe(gulp.dest("source"));
 });
 
-gulp.task("copy" function() {
+gulp.task("copy", function() {
   gulp.src([
     "source/fonts/**/*.{woff, woff2}",
     "source/css/**/*.css",

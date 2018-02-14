@@ -33,7 +33,8 @@
     "webp": "gulp webp",
     "sprite": "gulp sprite",
     "html": "gulp html",
-    "build": "gulp build"
+    "build": "gulp build",
+    "copy": "gulp copy"
   },
   "browserslist": [
     "last 2 versions",
