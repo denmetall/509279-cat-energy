@@ -14,6 +14,7 @@ var sprite = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var run = require("run-sequence");
+var del = require("del");
 
 gulp.task("style", function() {
   gulp.src("source/less/style.less")
@@ -82,7 +83,7 @@ gulp.task("html", function() {
 
 gulp.task("copy", function() {
   gulp.src([
-    "source/fonts/**/*.{woff, woff2}",
+    "source/fonts/**/*.{woff,woff2}",
     "source/css/**/*.css",
     "source/img/**",
     "source/js/**"
@@ -90,6 +91,10 @@ gulp.task("copy", function() {
     base: "source"
   })
   .pipe(gulp.dest("build"));
+})
+
+gulp.task("clean", function() {
+  del("build");
 })
 
 gulp.task("build", function(done) {
