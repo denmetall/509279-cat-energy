@@ -13,6 +13,7 @@ var webp = require("gulp-webp");
 var sprite = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
+var run = require("run-sequence");
 
 gulp.task("style", function() {
   gulp.src("source/less/style.less")
@@ -77,4 +78,8 @@ gulp.task("html", function() {
       include()
   ]))
     .pipe(gulp.dest("source"));
+});
+
+gulp.task("build", function() {
+  run("style", "images", "webp", "sprite", "html", done)
 });
