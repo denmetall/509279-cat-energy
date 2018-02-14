@@ -80,6 +80,18 @@ gulp.task("html", function() {
     .pipe(gulp.dest("source"));
 });
 
-gulp.task("build", function() {
+gulp.task("copy" function() {
+  gulp.src([
+    "source/fonts/**/*.{woff, woff2}",
+    "source/css/**/*.css",
+    "source/img/**",
+    "source/js/**"
+  ], {
+    base: "source"
+  })
+  .pipe(gulp.dest("build"));
+})
+
+gulp.task("build", function(done) {
   run("style", "images", "webp", "sprite", "html", done)
 });
