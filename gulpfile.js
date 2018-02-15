@@ -31,7 +31,7 @@ gulp.task("style", function () {
 });
 
 gulp.task("serve", function () {
-  return server.init({
+  server.init({
     server: "build/",
     notify: false,
     open: true,
