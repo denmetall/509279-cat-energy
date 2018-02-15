@@ -41,6 +41,7 @@ gulp.task("serve", function () {
 
   gulp.watch("source/less/**/*.less", ["style"]);
   gulp.watch("source/*.html", ["html"]);
+  gulp.watch("source/*.html").on('change', server.reload);
 });
 
 gulp.task("images", function () {
@@ -95,7 +96,8 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/js/**",
-    "source/*.html"
+    "source/*.html",
+    "source/img/**"
   ], {
       base: "source"
     })
@@ -107,5 +109,7 @@ gulp.task("clean", function () {
 })
 
 gulp.task("build", function (done) {
-  return run("clean", "copy", "style", "images", "webp", "sprite", "html", done);
+  return run("clean", "copy", "style", "webp", "sprite", "html", done);
 });
+
+//временно убрал таск images из сборки для скорости
