@@ -8,6 +8,36 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link href="fonts/oswaldregular.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
   <link href="fonts/oswaldmedium.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+  <!-- Pixel Glass для проверки соответствия макета ПП-->
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* По умолчанию показывается мобильный макет */
+      background-image: url("img/cat-energy-catalog-mobile.jpg");
+    }
+
+    /* Планшет */
+
+    @media ( min-width: 768px) {
+      HTML {
+        /* Планшетный макет */
+        background-image: url("img/cat-energy-catalog-tablet.jpg");
+      }
+    }
+
+    /* Десктоп */
+
+    @media ( min-width: 1300px) {
+      HTML {
+        /* Десктопный макет */
+        background-image: url("img/cat-energy-catalog-desktop.jpg");
+      }
+    }
+  </style>
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script src="../node_modules/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
 </head>
 
 <body>
