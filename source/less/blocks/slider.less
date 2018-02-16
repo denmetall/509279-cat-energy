@@ -24,26 +24,31 @@
   .slider__img {
     width: 690px;
     height: 517px;
+
+    &--after {
+      margin-left: -337px;
+    }
   }
 
   .slider__wrap {
-    position: relative;
     height: 536px;
     padding-left: 16px;
+    width: 708px;
+    display: flex;
   }
 
   .slider__after {
-    width: 690px;
+    width: 354px;
+    overflow: hidden;
     height: 517px;
     display: block;
   }
 
   .slider__before {
-    position: absolute;
-    top: 4px;
-    left: 16px;
-    overflow: hidden;
     width: 337px;
+    overflow: hidden;
+    height: 517px;
+    display: block;
   }
 }
 
@@ -57,11 +62,26 @@
 
   .slider__wrap {
     height: 509px;
+    padding-left: 41px;
+    margin-top: -47px;
+    margin-bottom: 47px;
+  }
+
+  .slider__before {
+    width: 430px;
+  }
+
+  .slider__after {
+    width: 356px;
   }
 
   .slider__img {
     width: 690px;
     height: 517px;
     margin-bottom: 30px;
+
+    &--after {
+      margin-left: -365px;
+    }
   }
 }
