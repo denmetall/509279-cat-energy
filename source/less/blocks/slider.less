@@ -11,10 +11,19 @@
   height: 240px;
 }
 
+.slider__after {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .slider {
     width: 708px;
     padding-top: 58px;
+  }
+
+  .slider__img {
+    width: 690px;
+    height: 517px;
   }
 
   .slider__wrap {
@@ -22,19 +31,18 @@
     height: 536px;
   }
 
-  .slider__img {
+  .slider__after {
     width: 690px;
     height: 517px;
+    display: block;
+  }
 
-    &--before {
-
-    }
-
-    &--after {
-      top: 0;
-      left: 0;
-      position: absolute;
-    }
+  .slider__before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 360px;
   }
 }
 
