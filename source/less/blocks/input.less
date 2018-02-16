@@ -9,7 +9,16 @@
 
   &--contacts {
     padding-bottom: 7px;
+    position: relative;
   }
+}
+
+.input__svg {
+  position: absolute;
+  right: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: @primary-text;
 }
 
 .input__field {
@@ -22,6 +31,27 @@
   font-size: 16px;
   text-transform: uppercase;
   color: @primary-text;
+  border: 1px solid @secondary-bg--dark;
+
+  &:hover {
+    border: 1px solid @secondary-bg--darken;
+  }
+
+  &:disabled {
+    border: 1px solid @primary-text;
+  }
+
+  &:invalid {
+    border: 1px solid @error-color;
+  }
+}
+
+.input__field:disabled + .input__svg {
+  color: @primary-bg;
+}
+
+.input__field:invalid + .input__svg {
+  color: @error-color;
 }
 
 .input__label {
