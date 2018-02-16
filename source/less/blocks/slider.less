@@ -17,9 +17,24 @@
     padding-top: 58px;
   }
 
+  .slider__wrap {
+    position: relative;
+    height: 536px;
+  }
+
   .slider__img {
     width: 690px;
     height: 517px;
+
+    &--before {
+
+    }
+
+    &--after {
+      top: 0;
+      left: 0;
+      position: absolute;
+    }
   }
 }
 
@@ -31,10 +46,13 @@
     padding-top: 0;
   }
 
+  .slider__wrap {
+    height: 509px;
+  }
+
   .slider__img {
     width: 690px;
     height: 517px;
-    margin-top: -43px;
     margin-bottom: 30px;
   }
 }
