@@ -11,6 +11,15 @@
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+}
+
+.map__interactive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 362px;
 }
 
 @media (min-width: @tablet-width) {
@@ -24,6 +33,11 @@
     width: 100%;
     height: auto;
   }
+
+  .map__interactive {
+    width: 100%;
+    height: 396px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -36,5 +50,10 @@
   .map__img {
     width: 100%;
     height: auto;
+  }
+
+  .map__interactive {
+    width: 100%;
+    height: 400px;
   }
 }
