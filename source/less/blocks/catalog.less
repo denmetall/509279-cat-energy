@@ -1,10 +1,15 @@
 .catalog__title {
-  margin: 0;
-  padding: 15px 15px 28px 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 15px 20px 28px;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
-  border-bottom: 1px solid @secondary-bg--darken;
+}
+
+.catalog__wrap {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: @tablet-width) {
@@ -18,12 +23,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .catalog__title {
     font-size: 60px;
     line-height: 60px;
     border-bottom: none;
+    padding-left: 30px;
   }
 }
 
@@ -32,8 +41,15 @@
     padding-top: 6px;
   }
 
+  .catalog__title {
+    padding-left: 40px;
+  }
+
   .catalog__wrap {
     padding-top: 18px;
     padding-bottom: 20px;
+    width: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }

@@ -10,6 +10,10 @@
   justify-content: center;
   max-width: 500px;
   border-bottom: 1px solid @secondary-bg--darken;
+
+  &:first-child {
+    border-top: 1px solid @secondary-bg--darken;
+  }
 }
 
 .product__features {
@@ -74,6 +78,11 @@
     margin-bottom: 27px;
     margin-left: 0;
     margin-right: 0;
+    border: none;
+
+    &:first-child {
+      border-top: none;
+    }
   }
 
   .product__wrap {
