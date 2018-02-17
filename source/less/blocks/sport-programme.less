@@ -106,12 +106,12 @@
   &:focus {
     color: @primary-text--darken--30;
   }
+}
 
-  &:hover&::after {
-    content: "";
-    width: 32px;
-    background-image: url("../img/icon-right-arrow-verylong.svg");
-  }
+.sport-programme__btn:hover.sport-programme__btn::after {
+  content: "";
+  width: 32px;
+  background-image: url("../img/icon-right-arrow-verylong.svg");
 }
 
 @media (min-width: @tablet-width) and (max-width: @desktop-width) {
