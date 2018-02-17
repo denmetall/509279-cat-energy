@@ -42,8 +42,9 @@
     border: 1px solid @primary-text;
   }
 
-  &:invalid {
+  &--error {
     border: 1px solid @error-color;
+    color: @error-color;
   }
 
   &--contacts {
@@ -53,10 +54,6 @@
 
 .input__field:disabled + .input__svg {
   color: @primary-bg;
-}
-
-.input__field:invalid + .input__svg {
-  color: @error-color;
 }
 
 .input__label {
