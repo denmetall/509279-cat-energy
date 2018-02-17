@@ -56,7 +56,7 @@ gulp.task("images", function () {
       imagemin.svgo({
         plugins: [
           {
-            removeViewBox: false
+            removeViewBox: true
           },
           {
             cleanupIDs: false
@@ -109,7 +109,7 @@ gulp.task("clean", function () {
 })
 
 gulp.task("build", function (done) {
-  return run("clean", "copy", "style", "webp", "sprite", "html", done);
+  return run("clean", "copy", "style", "images", "webp", "sprite", "html", done);
 });
 
 //временно убрал таск images из сборки для скорости
