@@ -1,15 +1,25 @@
 .input {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   flex-grow: 1;
   min-width: 280px;
   padding-top: 7px;
-  padding-bottom: 6px;
+  padding-bottom: 8px;
 
   &--contacts {
+    position: relative;
+    padding-top: 9px;
     padding-bottom: 7px;
   }
+}
+
+.input__svg {
+  position: absolute;
+  right: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: @primary-text;
 }
 
 .input__field {
@@ -22,6 +32,28 @@
   font-size: 16px;
   text-transform: uppercase;
   color: @primary-text;
+  border: 1px solid @secondary-bg--dark;
+
+  &:hover {
+    border: 1px solid @secondary-bg--darken;
+  }
+
+  &:disabled {
+    border: 1px solid @primary-text;
+  }
+
+  &--error {
+    border: 1px solid @error-color;
+    color: @error-color;
+  }
+
+  &--contacts {
+    padding-right: 20px;
+  }
+}
+
+.input__field:disabled + .input__svg {
+  color: @primary-bg;
 }
 
 .input__label {
@@ -35,7 +67,7 @@
 @media (min-width: @tablet-width) {
   .input {
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
 
     &--contacts {
       width: 570px;
@@ -48,6 +80,10 @@
     padding: 9px 18px;
     font-size: 20px;
     line-height: 20px;
+
+    &--contacts {
+      padding-right: 40px;
+    }
   }
 
   .input__label {
