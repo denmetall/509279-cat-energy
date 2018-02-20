@@ -4,6 +4,22 @@
   padding-top: 10px;
   padding-bottom: 13px;
   position: relative;
+}
+
+.checkbox__field:checked + .checkbox__label::after {
+  display: block;
+}
+
+.checkbox__field:focus + .checkbox__label::before {
+  outline: 1px solid red;
+}
+
+.checkbox__label {
+  padding-left: 46px;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: @primary-text--dark;
 
   &::before {
     content: "";
@@ -16,42 +32,20 @@
     top: 50%;
     transform: translateY(-50%);
   }
-}
 
-.checkbox__field:checked + .checkbox__label::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 19px;
-  height: 2px;
-  background-color: @primary-bg;
-  left: 8px;
-  top: 18px;
-  transform: rotate(-48deg);
-  border-top: none;
-  border-right: none;
-}
-
-.checkbox__field:checked + .checkbox__label::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 11px;
-  height: 2px;
-  background-color: @primary-bg;
-  left: 3px;
-  top: 22px;
-  transform: rotate(48deg);
-  border-top: none;
-  border-right: none;
-}
-
-.checkbox__label {
-  padding-left: 46px;
-  font-weight: 400;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: @primary-text--dark;
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    width: 21px;
+    height: 16px;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: @primary-bg;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -60,27 +54,21 @@
     padding-bottom: 25px;
     padding-right: 25px;
     margin-right: 40px;
-
-    &::before {
-      width: 40px;
-      height: 40px;
-    }
-  }
-
-  .checkbox__field:checked + .checkbox__label::before {
-    left: 10px;
-    top: 39px;
-  }
-
-  .checkbox__field:checked + .checkbox__label::after {
-    left: 16px;
-    top: 37px;
   }
 
   .checkbox__label {
     font-size: 20px;
     line-height: 20px;
     padding-left: 58px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+
+    &::after {
+      left: 10px;
+    }
   }
 }
 
